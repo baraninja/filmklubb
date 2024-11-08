@@ -291,7 +291,6 @@ elif selected == "Get Recommendations":
     if not preferences_data:
         st.warning("No preferences found. Please submit preferences first.")
     else:
-        # Vi tar bort fliken för personliga rekommendationer och hanterar endast grupprekommendationer
         with st.container():
             progress_placeholder = st.empty()
             status_placeholder = st.empty()
@@ -302,7 +301,6 @@ elif selected == "Get Recommendations":
                 progress_bar.progress((i + 1) / len(status_messages))
                 time.sleep(1)  # Simulate processing time
         
-        with st.spinner("🤔 Processing your group recommendations..."):
             try:
                 st.write("🎬 Finding the perfect movies for your group...")
                 
