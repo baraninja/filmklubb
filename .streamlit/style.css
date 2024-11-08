@@ -1,0 +1,198 @@
+/* .streamlit/style.css */
+
+/* Main container styles */
+.stApp {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+.app-header {
+    background: linear-gradient(to right, #1e293b, #334155);
+    padding: 2rem;
+    margin: -1rem -1rem 2rem -1rem;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.header-content p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #1e293b;
+    padding: 2rem 1rem;
+}
+
+[data-testid="stSidebar"] .stRadio label,
+[data-testid="stSidebar"] .stRadio span,
+[data-testid="stSidebar"] [data-testid="stMetricLabel"],
+[data-testid="stSidebar"] [data-testid="stMetricValue"],
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] div {
+    color: #f8fafc !important;
+}
+
+/* Form styling */
+.stTextInput > div > div,
+.stMultiSelect > div > div,
+.stTextArea > div > div {
+    border-radius: 0.5rem !important;
+}
+
+/* Button styling */
+.stButton > button {
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.stButton > button:hover {
+    background-color: #2563eb;
+}
+
+/* Metrics styling */
+[data-testid="stMetricValue"] {
+    font-size: 1.875rem !important;
+    font-weight: 600 !important;
+    color: #1e293b !important;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #64748b !important;
+}
+
+/* Alert styling */
+.stSuccess {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.stInfo {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.stWarning {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.stError {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Loading spinner */
+.stSpinner {
+    border-width: 4px;
+    border-style: solid;
+    border-color: #f3f4f6 #f3f4f6 #3b82f6 #f3f4f6;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Footer styling */
+.footer-text {
+    text-align: right;
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stApp {
+        padding: 1rem;
+    }
+    
+    .app-header {
+        padding: 1rem;
+        margin: -1rem -1rem 1rem -1rem;
+    }
+    
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    [data-testid="stMetricValue"] {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Expander styling */
+.streamlit-expander {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.streamlit-expander .streamlit-expanderHeader {
+    background-color: #f8fafc;
+    padding: 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.streamlit-expander .streamlit-expanderContent {
+    padding: 1rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* Custom loading animation styles */
+[data-testid="stStatus"] {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Animation for the loading messages */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+[data-testid="stStatus"] p {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Status icons */
+[data-testid="stStatus"] svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
