@@ -113,7 +113,7 @@ load_css()
 st.markdown("""
     <div class="app-header">
         <div class="header-content">
-            <h1>🎬 Film Preferences Analysis</h1>
+            <h1>🎬 Film Preferences Analysis (Beta)</h1>
             <p>Discover group dynamics and get personalized recommendations</p>
         </div>
     </div>
