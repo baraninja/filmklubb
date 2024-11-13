@@ -197,7 +197,7 @@ if selected == "Submit Preferences":
                         st.balloons()
                         
                         # Clear form
-                        st.experimental_rerun()
+                        st.rerun()
                         
                     except Exception as e:
                         st.error(f"Error saving preferences: {str(e)}")
